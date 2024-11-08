@@ -1,3 +1,5 @@
+// #ifndef ENCODER_HPP
+// #define ENCODER_HPP
 #pragma once
 
 #include <Arduino.h>
@@ -66,7 +68,8 @@ private:
             instance->readEncoder2();
         }
     }
-}
+};
 
+//#endif // ENCODER_HPP
 // Define the static instance pointer
 DualEncoder* DualEncoder::instance = nullptr;
